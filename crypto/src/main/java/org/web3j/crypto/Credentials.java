@@ -53,7 +53,6 @@ public class Credentials {
 
         return address != null ? address.equals(that.address) : that.address == null;
     }
-
     @Override
     public int hashCode() {
         int result = ecKeyPair != null ? ecKeyPair.hashCode() : 0;
