@@ -58,7 +58,7 @@ public class AbiTypesGenerator extends Generator {
         String packageName = createPackageName(superclass);
         ClassName className;
 
-        for (int bitSize = 8; bitSize <= Type.MAX_BIT_LENGTH; bitSize += 8) {
+    for (int bitSize = 8; bitSize <= Type.MAX_BIT_LENGTH; bitSize += 8) {
             className = ClassName.get(packageName, superclass.getSimpleName() + bitSize);
 
             MethodSpec constructorSpec = MethodSpec.constructorBuilder()
